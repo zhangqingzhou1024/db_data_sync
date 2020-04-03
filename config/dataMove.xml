@@ -1,0 +1,51 @@
+<tableConfig>
+    <tableList>
+        <tableInfo>
+            <sourceTable>event_news_ref</sourceTable>
+            <sourceColumn>auto_id,title,content,website_id</sourceColumn>
+            <sourcePriColum>auto_id</sourcePriColum>
+            <targetTable>student</targetTable>
+            <targetColumns>*</targetColumns>
+            <!-- 配置 数据表两端字段的映射关系 -->
+            <fieldConversionList>
+                <fieldConversion>
+                    <sourceField>auto_id</sourceField>
+                    <targetField>id</targetField>
+                </fieldConversion>
+                <fieldConversion>
+                    <sourceField>content</sourceField>
+                    <targetField>text</targetField>
+                </fieldConversion>
+                <fieldConversion>
+                    <sourceField>website_id</sourceField>
+                    <targetField>flag_id</targetField>
+                </fieldConversion>
+
+            </fieldConversionList>
+        </tableInfo>
+
+        <tableInfo>
+            <sourceTable>event_news_ref</sourceTable>
+            <sourceFilterColum>eid</sourceFilterColum>
+            <sourceColumn>*</sourceColumn>
+            <sourcePriColum>auto_id</sourcePriColum>
+            <targetTable>event_news_ref</targetTable>
+            <targetColumns>*</targetColumns>
+            <!-- <targetFilterColum>*</targetFilterColum> -->
+
+            <fieldConversionList>
+                <fieldConversion>
+                    <sourceField>auto_id</sourceField>
+                    <targetField>eid</targetField>
+                </fieldConversion>
+                <!-- 	<fieldConversion>
+                        <sourceField>eid</sourceField>
+                        <targetField>auto_id</targetField>
+                    </fieldConversion> -->
+
+            </fieldConversionList>
+
+        </tableInfo>
+
+    </tableList>
+</tableConfig>

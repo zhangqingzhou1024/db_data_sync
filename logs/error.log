@@ -1,0 +1,55 @@
+
+##{ERROR  2020-04-03 22:05:19}###########
+@Thread = main
+@Msg    = 创建数据库链接异常：
+java.sql.SQLException: Illegal connection port value 'port'
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1055)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:723)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.datasync.util.DbSys.getSourceConn(DbSys.java:33)
+	at com.datasync.util.DbSys.<init>(DbSys.java:24)
+	at com.datasync.server.SynThreads.<init>(SynThreads.java:36)
+	at com.datasync.main.MoverMain.start(MoverMain.java:41)
+	at com.datasync.main.MoverMain.main(MoverMain.java:57)
+
+##{ERROR  2020-04-03 22:05:19}###########
+@Thread = Thread-1
+@Msg    = query data! sql：select auto_id,title,content,website_id,auto_id from event_news_ref where 1=1  and auto_id>0 order by auto_id asc limit 3000
+Illegal connection port value 'port'
+
+##{ERROR  2020-04-03 22:05:20}###########
+@Thread = main
+@Msg    = 创建数据库链接异常：
+java.sql.SQLException: Illegal connection port value 'port'
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1055)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:723)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.datasync.util.DbSys.getSourceConn(DbSys.java:33)
+	at com.datasync.util.DbSys.<init>(DbSys.java:24)
+	at com.datasync.server.SynThreads.<init>(SynThreads.java:36)
+	at com.datasync.main.MoverMain.start(MoverMain.java:41)
+	at com.datasync.main.MoverMain.main(MoverMain.java:57)
